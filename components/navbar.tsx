@@ -5,7 +5,7 @@ const Navbar: React.FC = () => {
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
 
   return (
-    <div className="flex flex-col p-4 border-b">
+    <div className="flex flex-col p-4 border-b gap-6">
       {/* Top Bar */}
       <div className="flex items-center justify-between w-full">
         <h1 className="text-sm font-semibold">NICO YARD</h1>
