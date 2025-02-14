@@ -3,7 +3,6 @@ interface CategoryCardProps {
   title: string;
   image: string;
 }
-
 const CategoryCard: React.FC<CategoryCardProps> = ({ title, image }) => {
   return (
     <div className="flex flex-col items-center border border-gray-300 rounded-lg p-3 hover:shadow-md transition-shadow w-32 h-40 sm:w-36 sm:h-44 md:w-40 md:h-48">
@@ -14,6 +13,7 @@ const CategoryCard: React.FC<CategoryCardProps> = ({ title, image }) => {
     </div>
   );
 };
+
 
   
   export default CategoryCard;

@@ -70,7 +70,7 @@ const MenuList: React.FC<MenuListProps> = ({ items }) => {
                   {qty === 0 ? (
                     <button
                       onClick={() => handleQuantityChange(item.id, 1)}
-                      className="px-4 py-2 bg-gray-600 text-white rounded-md hover:bg-gray-300 transition"
+                      className="px-4 py-2 bg-gray-600 text-white rounded-md hover:bg-gray-200 transition"
                     >
                       Add
                     </button>

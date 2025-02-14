@@ -4,7 +4,7 @@ import CategoryCard from "../../../components/catrgorie";
 import Navbar from "../../../components/navbar";
 
 const categories = [
-  { title: "Soups", image: "/soups.png" },
+  { title: "Soups", image: "/soup.webp" },
   {
     title: "Salads",
     image:
@@ -36,7 +36,8 @@ const Categories: React.FC = () => {
   return (<div>
           <Navbar />
     <div className="flex flex-col items-center p-4">
-    <h2 className="w-full ml-10 text-lg font-semibold mb-4 text-left">Categories</h2>      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 w-full px-4">
+    <h2 className="w-full ml-10 text-lg font-semibold mb-4 text-left">Categories</h2>     
+     <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 w-full px-4">
         {categories.map((category) => (
             <a href={`/${category.title}`} key={category.title}>
           <CategoryCard key={category.title} {...category} />
